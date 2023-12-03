@@ -9,7 +9,7 @@ const Logo = () => {
     <Link href={'/'}>
         <Image
         src={donutlogo}
-    style={{height: '100px', width: '80px'}}
+    style={{height: '300px', width: '280px'}}
         />
     </Link>
   )

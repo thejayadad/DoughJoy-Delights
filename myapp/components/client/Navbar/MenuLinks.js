@@ -18,7 +18,7 @@ const MenuLinks = () => {
   return (
     <div className="relative">
       <div
-        className="cursor-pointer text-3xl z-[100]"
+        className="cursor-pointer text-5xl z-[100]"
         style={{ zIndex: 100 }}
         onClick={toggleMenu}
       >

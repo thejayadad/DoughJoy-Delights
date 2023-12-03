@@ -13,7 +13,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl font-bold mb-4"
+            className="sm:text-4xl md:text-6xl lg:text-8xl font-bold mb-4"
           >
             DoughJoy Delights
           </motion.h1>
@@ -21,7 +21,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-lg"
+            className="text-2xl md:text-3xl lg:text-4xl"
           >
             The Destination For All Donut Lovers
           </motion.p>

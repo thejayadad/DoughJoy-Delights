@@ -3,6 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import DonutCard from './DonutCard';
+import { Parallax } from 'react-parallax';
+
 
 const DonutList = () => {
   const [ref, inView] = useInView({
@@ -16,7 +18,7 @@ const DonutList = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
-          className="text-primary text-5xl"
+          className="text-primary text-4xl md:text-6xl lg:text-8xl"
         >
           DonutLists
         </motion.h1>
@@ -25,18 +27,36 @@ const DonutList = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1 }}
-          className="w-64 h-64 mx-auto rounded-full"
+          className="lg:w-[400px] lg:h-[400px] mx-auto rounded-full"
         >
             
-        <img src='/donutlist.png' alt="Donut" className="w-64 h-64 object-cover rounded-full" />
+        <img src='/donutlist.png' alt="Donut" className="lg:w-[400px] lg:h-[400px] object-cover rounded-full" />
 
         </motion.div>
-        <div className='bg-orange-300 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-[800px] gap-4'>
-        <DonutCard />
-        <DonutCard />
-        <DonutCard />
+        <Parallax
+        bgImage="/donutbg.png"
+        strength={500}
+        >
+            <div
+              className='p-8 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'
+            >
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
+                <DonutCard />
 
-        </div>
+            </div>
+        </Parallax>
       </div>
     </section>
   );
