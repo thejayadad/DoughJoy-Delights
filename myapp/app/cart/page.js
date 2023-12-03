@@ -19,8 +19,8 @@ const CartPage = () => {
         className='text-center'
         >Shopping Cart</h2>
         <div className='grid grid-cols-1 md:grid-cols-8 gap-6'>
-            <div className='md:col-span-6  p-8'>
-            <table className='max-w-full divide-y divide-gray-200 mx-auto'>
+            <div className='md:col-span-6 p-8'>
+            <table className='max-w-2xl  divide-y divide-gray-200 mx-auto'>
                 <thead>
                 <tr>
                 <th
@@ -99,7 +99,7 @@ const CartPage = () => {
                 </tbody>    
             </table>
             </div>  
-            <div className='md:col-span-2 bg-orange-300 p-8'>
+            <div className='md:col-span-2 bg-purple-300 text-white   p-8'>
                 checkout
             </div>
         </div>

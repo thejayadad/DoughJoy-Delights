@@ -10,9 +10,9 @@ const DonutCard = () => {
       className="relative overflow-hidden"
     >
       <img
-        src="https://images.pexels.com/photos/867452/pexels-photo-867452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        src="/donut1.png"
         alt="Donut"
-        className="w-full h-96 object-cover"
+        className="w-full h-96 object-cover bg-white"
       />
 
       <motion.div
